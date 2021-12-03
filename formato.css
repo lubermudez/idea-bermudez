@@ -1,0 +1,128 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}   
+/*GRILLA SÓLO PARA INDEX*/
+
+
+.grid-uno{
+    display: grid;
+    /*columnas*/
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 15% 80% 15%;
+    grid-template-areas: "inicio" "header" "main" "footer"; 
+
+}
+
+.img-inicio {
+    grid-area: inicio;
+    background-image: url(img/backgroundprincipal.jpg); opacity: 0.7; width: 100%; background-repeat: no-repeat; background-size: cover;
+    height: auto; }
+    
+    .grid-uno header {
+        grid-area: header;
+        background-image: url(img/banner1.png); background-position: center; background-repeat: no-repeat; background-size: cover; padding-top: 10px; padding-bottom: 10px;}
+    
+    .grid-uno main {
+        grid-area: main;
+        background-color: antiquewhite;
+        background-image: url(img/backgroundprincipal.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; }
+     
+    .grid-uno footer {
+        grid-area: footer;
+ }
+    
+    /*MODIFICACIONES PARA LA PÁGINA PRINCIPAL ÚNICAMENTE*/
+   
+    
+    @keyframes texto{
+        from{ margin-top: 19%;}
+        to { margin-top: 0%;}
+    }   
+    
+    .button{ padding: 12px 28px; font-size: 0.2em; background-color: #555555; text-align: center; font-size: 0.5em; word-spacing: 4px;}
+    .button a{ text-decoration: none; color: rgba(250, 162, 0);}
+    .button a:hover { font-size: 1.2em;}
+
+    .texto-bienvenida{
+        position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 3em;
+          font-weight: bold; font-family: 'Bebas Neue';
+          animation-name: texto;
+          animation-duration: 4s;  color:  rgb(250, 162, 0); background-color: rgb(37, 49, 83);
+        } 
+
+        .texto.bienvenida p {
+            position: absolute;
+            top: 150%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            font-size: 0.5em;
+            font-weight: bold; font-family: 'Bebas Neue'; word-spacing: 10px;
+            animation-name: texto;
+            animation-duration: 4s;
+            color:  rgb(250, 162, 0); background-color: rgb(37, 49, 83);
+            }
+    
+    /*FIN DE CAMBIOS EXCLUSIVOS PARA EL INDEX*/
+
+    /*GRILLA PARA TODAS LAS DEMÁS SECCIONES*/
+      
+    .grid-dos{
+        display: grid;
+        /*columnas*/
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 80% 15%;
+        grid-template-areas: "header" "main" "footer";
+    }
+    
+    .grid-dos header {
+        grid-area: header;
+        background-image: url(img/banner1.png); background-position: center; background-repeat: no-repeat; background-size: cover; padding-top: 10px; width: 100%;
+    }
+    .grid-dos main {
+        grid-area: main;
+        background-color: antiquewhite;
+        background-image: url(img/backgroundprincipal.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%;
+        display: flex; justify-items: center; justify-content: center;
+    }
+    
+        
+    .grid-dos footer {
+        grid-area: footer;
+        background-image: linear-gradient(to right, rgb(37, 49, 83), orange); 
+    }
+    
+                /*GALERIA*/
+    
+                .flex-galeria{display: flex; flex-flow: row wrap; justify-content: center; align-items: center; margin-top: 7%; }
+    
+                div.gallery {
+                    margin: 5px;
+                     border: 3px solid orange;
+                     float: left;
+                     width: 225px;
+                    }
+                   
+                   div.gallery:hover {
+                     border: 3px solid rgb(19, 19, 49); }
+                   
+                   div.gallery img {
+                     width: 100%;
+                     height: auto; }
+                
+                   div.desc {
+                     padding: 15px;
+                     text-align: center; color: white;
+                     background-color: rgb(19, 19, 49); }
+                
+                /*FIN GALERÍA*/
+    
+
+    
+
+

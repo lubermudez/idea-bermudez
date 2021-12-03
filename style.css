@@ -1,5 +1,436 @@
+@charset "UTF-8";
 .grid-uno footer {
+  background-image: -webkit-gradient(linear, left top, right top, from(#253153), to(#faa200));
+  background-image: linear-gradient(to right, #253153, #faa200);
+}
+
+/* BARRA DE NAVEGACIÓN*/
+nav {
+  margin-top: 25%;
+  text-align: center;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  list-style-position: inherit;
+  padding-top: 5px;
+}
+
+.nav-style {
+  text-transform: uppercase;
+  text-align: center;
+  color: #faa200;
+  background-color: rgba(117, 120, 122, 0.37);
+  font-size: 1em;
+  padding: 1rem;
+  line-height: normal;
+}
+
+nav ul li a:hover {
+  background-color: #0a0a2e;
+  color: orange;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-centro {
+  color: white;
+  background-color: black;
+  font-size: 1em;
+  padding: 1rem;
+  line-height: normal;
+}
+
+.texto-inicio {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background-color: rgba(122, 117, 117, 0.37);
+  font-size: 1em;
+  padding: 1rem;
+  line-height: normal;
+}
+
+/*MAIN Y ASIDE*/
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 70px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.flex-container img {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: orange;
+}
+
+.flex-container-dos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-container-dos img {
+  margin-top: 5%;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #faa200;
+  position: center;
+  width: 100%;
+}
+
+.texto-main-uno {
+  text-align: center;
+  color: #faa200;
+  background-color: #253153;
+}
+
+.texto-main-uno h2 {
+  text-transform: uppercase;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.texto-main-uno p {
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  font-weight: bold;
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+
+.texto-main-dos {
+  text-align: center;
+  color: #faa200;
+  background-color: #253153;
+}
+
+.texto-main-dos h2 {
+  text-transform: uppercase;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.texto-main-dos p {
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  font-weight: bold;
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+
+/*FOOTER*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li {
+  list-style: none;
+  text-align: center;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+i {
+  color: orange;
+  font-size: 2em;
+  margin-top: 10px;
+  width: 50px;
+}
+
+i:hover {
+  color: black;
+}
+
+footer ul li a:hover {
+  color: black;
+}
+
+footer div {
+  color: white;
+}
+
+/*FIN DE FOOTER*/
+/*FORMULARIO DE CONTACTO*/
+form {
+  margin-top: 45px;
+  margin-left: 50px;
+  margin-right: 60px;
+  border-radius: 5px;
+  padding: 20px;
   background-image: -webkit-gradient(linear, left top, right top, from(#253153), to(orange));
   background-image: linear-gradient(to right, #253153, orange);
+  height: 80%;
+}
+
+h5 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1em;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+label {
+  color: white;
+}
+
+input[type=submit] {
+  width: 25%;
+  background-color: #faa200;
+  text-transform: uppercase;
+  color: black;
+  padding: 14px 20px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  width: 25%;
+  background-color: #faa200;
+  text-transform: uppercase;
+  color: black;
+  padding: 14px 20px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  opacity: 0.7;
+}
+
+input[type=reset]:hover {
+  opacity: 0.7;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+/*SECCION ABOUT US / QUIENES SOMOS */
+.titulo-quienes {
+  font-size: 2em;
+  text-align: center;
+  background-color: #252547;
+  margin-top: 40px;
+  padding: 20px;
+  color: orange;
+}
+
+.texto-quienes {
+  text-align: justify;
+  background-color: #252547;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  word-spacing: 4px;
+  color: orange;
+  line-height: 30px;
+  padding: 20px;
+}
+
+.info {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.info a {
+  text-decoration: none;
+  color: orange;
+  background-color: #252547;
+  padding: 10px;
+}
+
+.info a:hover {
+  padding: 20px;
+}
+
+/*SECCION PREGUNTAS FRECUENTES */
+.div-preguntas h3 {
+  font-size: 1.5em;
+  text-align: center;
+  background-color: #253153;
+  margin-top: 40px;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.div-preguntas p {
+  text-align: center;
+  background-color: #253153;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  word-spacing: 4px;
+  color: white;
+  line-height: 30px;
+  padding: 10px;
+}
+
+/*RESPOSIVE*/
+/*TABLETA*/
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .grid-uno {
+    -ms-grid-rows: 50% 10% 90% 15%;
+        grid-template-rows: 50% 10% 90% 15%;
+  }
+  .grid-uno header {
+    background-size: cover;
+  }
+  html {
+    font-size: 80%;
+  }
+  .credit-footer {
+    display: none;
+  }
+  .grid-dos {
+    -ms-grid-rows: 30% 80% 45%;
+        grid-template-rows: 30% 80% 45%;
+  }
+}
+
+/*CELULARES*/
+@media screen and (max-width: 600px) {
+  .texto-bienvenida {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Bebas Neue';
+    -webkit-animation: none;
+            animation: none;
+    position: inherit;
+    left: 0%;
+    right: 0%;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .texto-bienvenida p {
+    display: none;
+  }
+  .grid-uno {
+    -ms-grid-rows: 10% 0% 90% 10%;
+        grid-template-rows: 10% 0% 90% 10%;
+  }
+  .grid-uno header {
+    background-position: center;
+    background-size: cover;
+  }
+  .img-inicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .credit-footer {
+    display: none;
+  }
+  html {
+    font-size: 60%;
+  }
+  nav ul li {
+    font-size: 70%;
+  }
+  .grid-dos {
+    -ms-grid-rows: 20% 100% 15%;
+        grid-template-rows: 20% 100% 15%;
+  }
+  .grid-dos header {
+    padding: 0px;
+    background-position: inherit;
+  }
+  input[type=submit] {
+    width: 40%;
+  }
+  input[type=reset] {
+    width: 40%;
+  }
+  div .gallery {
+    width: 156px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
