@@ -18,7 +18,7 @@
 
 .grid-uno header {
     grid-area: header;
-    background-image: url(../img/banner1.png); background-position: center; background-repeat: no-repeat; background-size: cover; padding-top: 10px; padding-bottom: 10px; }
+    background-image: url(../img/banner1.png); background-position: center; background-repeat: no-repeat; background-size: contain; padding-top: 10px; padding-bottom: 10px;}
 
 .grid-uno main {
     grid-area: main;
@@ -285,24 +285,47 @@ input[type=text], select {
 
 .div-preguntas p{ text-align: center; background-color: rgb(37, 37, 71); margin-top: 20px; margin-bottom: 20px; font-size: 1em; font-weight: bold; word-spacing: 4px; color: white;line-height: 30px; padding: 10px;  }
 
-/*RESPOSIVE*/
 
-html{font-size: 100%;}
+/*RESPOSIVE*/
 
 /*CELULARES*/
 @media screen and (max-width: 600px){
     .grid-uno  {    
-    grid-template-rows: 50% 10% 90% 10%;
+    grid-template-rows: 10% 0% 90% 10%;
 }
+    .grid-uno header{
+        background-position: center; background-size: cover;
+    }
+
+    .img-inicio{display: flex; align-content: center; justify-content: center; align-items: center;}
+
+ .texto-bienvenida{font-size: 2em;
+    font-weight: bold; font-family: 'Bebas Neue'; animation: none; position: inherit; left: 0%; right: 0%; transform: none;}
+
+    .texto-bienvenida p{ display: none;}
+
+    .grid-dos header { padding: 0px; background-position: inherit;}
+
     .credit-footer {display: none;}
-    html{font-size: 70%;}
-    nav ul li{font-size: 80%;}
+    
+    html{font-size: 60%;}
+    
+    nav ul li{font-size: 70%;}
+    
     .grid-dos {
-        grid-template-rows: 25% 100% 15% ;
+        grid-template-rows: 20% 100% 15% ;
     }
-    .flex-galeria{
-        flex-direction: column;
-    }
+      
+      input[type=submit]{
+        width: 40%;
+      }
+      input[type=reset]{
+        width: 40%;
+      }
+
+      div .gallery {
+          width: 156px;
+      }
 }
 
 /*TABLETA*/
