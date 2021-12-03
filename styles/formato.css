@@ -336,4 +336,10 @@ input[type=text], select {
  }
  html{font-size: 80%;}
  .credit-footer {display: none;}
+
+ .grid-uno header{
+     background-size: cover;
+ }
+
+ .grid-dos{grid-template-rows: 30% 80% 45%;}
 }
