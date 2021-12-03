@@ -1,0 +1,28 @@
+$azul: rgb(37, 49, 83);
+$naranja: rgb(250, 162, 0);
+
+.grid-uno footer {
+    background-image: linear-gradient(to right, $azul, orange); }
+
+    .texto-bienvenida{
+        position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 3em;
+          font-weight: bold; font-family: 'Bebas Neue';
+          animation-name: texto;
+          animation-duration: 4s;  color: $naranja; background-color: $azul;
+          p {
+            position: absolute;
+            top: 150%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            font-size: 0.5em;
+            font-weight: bold; font-family: 'Bebas Neue'; word-spacing: 10px;
+            animation-name: texto;
+            animation-duration: 4s;
+            color: $naranja; background-color: $azul;
+            }
+        } 
+

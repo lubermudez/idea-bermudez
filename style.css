@@ -1,0 +1,40 @@
+.grid-uno footer {
+  background-image: -webkit-gradient(linear, left top, right top, from(#253153), to(orange));
+  background-image: linear-gradient(to right, #253153, orange);
+}
+
+.texto-bienvenida {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Bebas Neue';
+  -webkit-animation-name: texto;
+          animation-name: texto;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  color: #faa200;
+  background-color: #253153;
+}
+
+.texto-bienvenida p {
+  position: absolute;
+  top: 150%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 0.5em;
+  font-weight: bold;
+  font-family: 'Bebas Neue';
+  word-spacing: 10px;
+  -webkit-animation-name: texto;
+          animation-name: texto;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  color: #faa200;
+  background-color: #253153;
+}
+/*# sourceMappingURL=style.css.map */
